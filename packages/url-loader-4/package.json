@@ -1,9 +1,13 @@
 {
-  "name": "sourcemap",
+  "name": "url-loader-4",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "build": "npx webpack"
-  }
+  },
+  "devDependencies": {
+    "url-loader": "^4.1.1"
+  },
+  "dependencies": {}
 }

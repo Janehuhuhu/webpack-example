@@ -1,9 +1,12 @@
 {
-  "name": "start",
+  "name": "file-loader-3",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "build": "npx webpack"
+  },
+  "devDependencies": {
+    "file-loader": "^6.2.0"
   }
 }

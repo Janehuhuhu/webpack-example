@@ -1,11 +1,8 @@
 {
-  "name": "file-loader",
+  "name": "sourcemap-2",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "dependencies": {
-    "file-loader": "^6.2.0"
-  },
   "scripts": {
     "build": "npx webpack"
   }
