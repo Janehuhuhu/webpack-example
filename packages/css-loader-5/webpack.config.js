@@ -15,10 +15,22 @@ module.exports = {
           options: {
             name: '[name].[ext]',
             outputPath: 'imgs',
-            // esModule: false,
-            // publicPath: 'http://www.baidu.com'
           }
         }
+      },
+      {
+        test: /\.css$/,
+        use: [
+          {
+            loader: 'style-loader'
+          },
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true
+            }
+          }
+        ]
       }
     ]
   }
