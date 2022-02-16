@@ -1,0 +1,9 @@
+{
+  "name": "watch-16",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "npx webpack"
+  }
+}
