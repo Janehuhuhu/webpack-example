@@ -1,9 +1,0 @@
-{
-  "name": "less-loader-6",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "scripts": {
-    "build": "npx webpack"
-  }
-}
