@@ -13,7 +13,7 @@ module.exports = {
           secure: false,
           changeOrigin:  true
         }
-    }
+    },
   },
   mode: 'development',
   entry: "./src/js/index.js",
