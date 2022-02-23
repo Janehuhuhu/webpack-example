@@ -713,6 +713,18 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.16.7"
 
+"@babel/plugin-transform-runtime@^7.17.0":
+  version "7.17.0"
+  resolved "http://r.npm.sankuai.com/@babel/plugin-transform-runtime/download/@babel/plugin-transform-runtime-7.17.0.tgz#0a2e08b5e2b2d95c4b1d3b3371a2180617455b70"
+  integrity sha1-Ci4IteKy2VxLHTszcaIYBhdFW3A=
+  dependencies:
+    "@babel/helper-module-imports" "^7.16.7"
+    "@babel/helper-plugin-utils" "^7.16.7"
+    babel-plugin-polyfill-corejs2 "^0.3.0"
+    babel-plugin-polyfill-corejs3 "^0.5.0"
+    babel-plugin-polyfill-regenerator "^0.3.0"
+    semver "^6.3.0"
+
 "@babel/plugin-transform-shorthand-properties@^7.16.7":
   version "7.16.7"
   resolved "http://r.npm.sankuai.com/@babel/plugin-transform-shorthand-properties/download/@babel/plugin-transform-shorthand-properties-7.16.7.tgz#e8549ae4afcf8382f711794c0c7b6b934c5fbd2a"
@@ -763,6 +775,14 @@
   dependencies:
     "@babel/helper-create-regexp-features-plugin" "^7.16.7"
     "@babel/helper-plugin-utils" "^7.16.7"
+
+"@babel/polyfill@^7.12.1":
+  version "7.12.1"
+  resolved "http://r.npm.sankuai.com/@babel/polyfill/download/@babel/polyfill-7.12.1.tgz#1f2d6371d1261bbd961f3c5d5909150e12d0bd96"
+  integrity sha1-Hy1jcdEmG72WHzxdWQkVDhLQvZY=
+  dependencies:
+    core-js "^2.6.5"
+    regenerator-runtime "^0.13.4"
 
 "@babel/preset-env@^7.16.11":
   version "7.16.11"
@@ -854,6 +874,14 @@
     "@babel/plugin-transform-dotall-regex" "^7.4.4"
     "@babel/types" "^7.4.4"
     esutils "^2.0.2"
+
+"@babel/runtime-corejs2@^7.16.5":
+  version "7.16.5"
+  resolved "http://r.npm.sankuai.com/@babel/runtime-corejs2/download/@babel/runtime-corejs2-7.16.5.tgz#1bd3870328b89e41ba7dabd005ccd9eae4f12dfa"
+  integrity sha1-G9OHAyi4nkG6favQBczZ6uTxLfo=
+  dependencies:
+    core-js "^2.6.5"
+    regenerator-runtime "^0.13.4"
 
 "@babel/runtime@^7.8.4":
   version "7.17.2"
@@ -2000,6 +2028,11 @@ core-js-compat@^3.20.2, core-js-compat@^3.21.0:
   dependencies:
     browserslist "^4.19.1"
     semver "7.0.0"
+
+core-js@2, core-js@^2.6.5:
+  version "2.6.12"
+  resolved "http://r.npm.sankuai.com/core-js/download/core-js-2.6.12.tgz#d9333dfa7b065e347cc5682219d6f690859cc2ec"
+  integrity sha1-2TM9+nsGXjR8xWgiGdb2kIWcwuw=
 
 core-util-is@1.0.2:
   version "1.0.2"

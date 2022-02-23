@@ -9,7 +9,7 @@ module.exports = {
     port: 9090,  // 修改允许服务器环境端口号, 默认为 8080
   },
   mode: 'development',
-  entry: "./src/js/index.js",
+  entry: "./src/js/index.js", //['@babel/polyfill', "./src/js/index.js"],
   output: {
     filename: 'js/bundle.js',
     path: path.resolve(__dirname, 'dist')
