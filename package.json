@@ -21,6 +21,8 @@
     "core-js": "2",
     "css-loader": "^6.5.1",
     "html-webpack-plugin": "^5.5.0",
+    "html-withimg-loader": "^0.1.16",
+    "image-webpack-loader": "^8.0.1",
     "less": "^4.1.2",
     "less-loader": "^10.2.0",
     "mini-css-extract-plugin": "^2.5.3",
