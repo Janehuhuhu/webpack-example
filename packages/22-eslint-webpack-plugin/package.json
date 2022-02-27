@@ -1,0 +1,11 @@
+{
+  "name": "22-eslint-webpack-plugin",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "npx webpack",
+    "dev": "npx webpack-dev-server"
+  },
+  "devDependencies": {}
+}
