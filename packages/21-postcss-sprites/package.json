@@ -1,0 +1,10 @@
+{
+  "name": "21-postcss-sprites",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "npx webpack",
+    "dev": "npx webpack-dev-server"
+  }
+}
