@@ -29,7 +29,26 @@ optimization: {
 这意味着，如果在项目中使用类似 `css-loader` 并导入 `CSS `文件，
 则需要将其添加到 `side effect` 列表中，以免在生产模式中无意中将它删除。
 
-<div style="margin-bottom: 30px;"></div>
+<div style="margin-bottom: 50px;"></div>
+
+
+## 3. CSS 模块 Tree-Shaking
+不光 `JS` 模块可以进行 `Tree-Shaking`, `CSS` 模块也可以进行 `Tree-Shaking`
+```js
+// 安装依赖
+npm i purgecss-webpack-plugin glob -D
+
+// 配置
+const PurgeCSSPlugin = require('purgecss-webpack-plugin')
+  plugins: [
+    new PurgeCSSPlugin({
+      paths: glob.sync(`${PATHS.src}/**/*`,  { nodir: true }),
+    }),
+  ]
+```
+注意： `purifycss-webpack` 已废弃，在 `webpack5` 中使用会报错 *TypeError: compiler.plugin is not a function*
+<div style="margin-bottom: 50px;"></div>
 
 
 [官网](https://www.webpackjs.com/guides/tree-shaking/)
+[purgecss-webpack-plugin](https://www.npmjs.com/package/purgecss-webpack-plugin)
