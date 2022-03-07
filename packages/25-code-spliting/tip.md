@@ -14,7 +14,7 @@
 <div style="margin-bottom: 50px;"></div>
 
 
-## 3. 如何开启Code-Splitting
+## 3. 如何开启 Code-Splitting
 ### 3.1 手动分割 - 不共享文件
 修改配置文件同时打包多个文件
 ```js
@@ -74,6 +74,34 @@ optimization: {
   }
 },
 ```
+<div style="margin-bottom: 50px;"></div>
+
+## 动态导入（异步加载）
+```js
+// 同步加载,例如: 在 `index.js` 中导入了 *10* 个模块, 那么只要 `index.js` 被执行, 就会一次性将 *10* 个模块加载进来
+import $ from 'jquery';
+// 异步加载, 例如: 在 `index.js` 中导入了 *10* 个模块, 那么哪怕 `index.js` 被执行, 也要看是否满足加载条件才去加载
+import('jquery').then(({default: $ }) => {使用模块代码});
+```
+```js
+// 例如
+function getComponent() {
+ return import('lodash')
+   .then(({ default: _ }) => {
+     const element = document.createElement('div');
+     element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+     return element;
+   })
+   .catch((error) => 'An error occurred while loading the component');
+}
+getComponent().then((component) => {
+ document.body.appendChild(component);
+});
+```
+
+注意：
+- `import()` 是提案中的语法，使用的时候需要修改 `eslintrc` 中的* "ecmaVersion": 11* 
+- 对于异步加载的模块无需配置, `webpack` 会自动分割，不需要加 `splitchunks` 配置
 <div style="margin-bottom: 50px;"></div>
 
 ### FAQ
