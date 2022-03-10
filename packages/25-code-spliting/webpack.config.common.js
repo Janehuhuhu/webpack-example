@@ -13,29 +13,29 @@ module.exports = {
   //     filename: 'js/~vendor.[hash:8].js'
   //   },
   // },
-  entry: {
-    main: "./src/js/index.js",
-    // another: "./src/js/test.js",
-  },
+  // entry: {
+  //   main: "./src/js/index.js",
+  //   another: "./src/js/test.js",
+  // },
   /**
    * 配置 dependOn option 选项共享模块
    */ 
-  // optimization: {
-  //   runtimeChunk: 'single',
-  // },
-  // entry: {
-  //   main: {
-  //     import: "./src/js/index.js",
-  //     dependOn: 'shared'
-  //   },
-  //   another: {
-  //     import: "./src/js/test.js",
-  //     dependOn: 'shared'
-  //   },
-  //   shared: 'lodash'
-  // },
+  optimization: {
+    runtimeChunk: 'single',
+  },
+  entry: {
+    main: {
+      import: "./src/js/index.js",
+      dependOn: 'shared'
+    },
+    another: {
+      import: "./src/js/test.js",
+      dependOn: 'shared'
+    },
+    shared: ['lodash']
+  },
   output: {
-    filename: 'js/[name].bundle.[hash:8].js',
+    filename: 'js/[name].bundle.[contenthash:8].js',
     path: path.resolve(__dirname, 'dist'),
     assetModuleFilename: 'imgs/[name][ext]'
   },
