@@ -3,7 +3,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const TerserJSPlugin = require('terser-webpack-plugin');
+// const TerserJSPlugin = require('terser-webpack-plugin');
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 module.exports = {
   mode: 'production',
@@ -13,7 +14,9 @@ module.exports = {
     path: path.resolve(__dirname, 'dist')
   },
   optimization: {
-    minimizer: [new OptimizeCSSAssetsPlugin(), new TerserJSPlugin()]
+    // minimizer: [new OptimizeCSSAssetsPlugin(), new TerserJSPlugin()] // 老用法
+    minimizer: [`...`, new CssMinimizerPlugin()]
+    // minimize: true
   },
   module: {
     rules: [
