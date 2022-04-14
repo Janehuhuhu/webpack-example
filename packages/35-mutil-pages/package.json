@@ -1,0 +1,13 @@
+{
+  "name": "35-mutil-pages",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "npx webpack --config webpack.config.dev.js",
+    "build": "npx webpack --config webpack.config.prod.js",
+    "dev": "npx webpack-dev-server"
+  },
+  "devDependencies": {},
+  "sideEffects": ["*.css", "*.less", "*.scss"]
+}
