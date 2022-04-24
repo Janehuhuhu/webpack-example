@@ -14,3 +14,10 @@ yarn workspaces run build
 
 - [Yarn Workspace 使用指南](https://blog.csdn.net/tianxintiandisheng/article/details/115329134)
 - [npx 寻址](https://juejin.cn/post/7046687336939126797)
+
+
+
+
+@TODO
+- loader 写法
+- plugin 写法
