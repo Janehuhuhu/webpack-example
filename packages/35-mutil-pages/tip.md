@@ -1,5 +1,5 @@
-## 1. 需求利用webpack打包生成两个页面
-一个页面叫做index, 一个页面叫做detail
+## 1. 需要利用webpack打包生成两个页面
+一个页面叫做 `index`, 一个页面叫做 `detail`
 <div style="margin-bottom: 50px;"></div>
 
 

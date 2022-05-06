@@ -25,33 +25,30 @@ module.exports = {
     index: './src/index.js',
     another: './src/another-module.js',
   },
-    output: {
-    filename: 'main.js',
+  output: {
     filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
-    },
+  },
 };
 ```
 存在问题：如果入口 `chunk` 之间包含一些重复的模块，那些重复模块都会被引入到各个 `bundle` 中。这种方法不够灵活，并且不能动态地将核心应用程序逻辑中的代码拆分出来。
 <div style="margin-bottom: 30px;"></div>
 
-### 3.2 手动分割 - 不共享文件
+### 3.2 手动分割 - 共享文件
 配置 `dependOn option` 选项，这样可以在多个 `chunk` 之间共享模块
 ```js
 module.exports = {
   mode: 'development',
   entry: {
-  index: './src/index.js',
-  another: './src/another-module.js',
-  index: {
-    import: './src/index.js',
-    dependOn: 'shared',
-  },
-  another: {
-    import: './src/another-module.js',
-    dependOn: 'shared',
-  },
-  shared: 'lodash',
+    index: {
+      import: './src/index.js',
+      dependOn: 'shared',
+    },
+    another: {
+      import: './src/another-module.js',
+      dependOn: 'shared',
+    },
+    shared: 'lodash',
   },
   output: {
     filename: '[name].bundle.js',

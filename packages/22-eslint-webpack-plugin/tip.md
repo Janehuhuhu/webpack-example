@@ -6,7 +6,7 @@
 ## 2. 如何使用 eslint
 ```js
 // 安装依赖
-npm install eslint --save-dev
+npm install eslint eslint-webpack-plugin --save-dev
 // 生成eslint配置文件 .eslintrc
 ...此处省略
 // 配置 webpack, eslint-loader 已废弃

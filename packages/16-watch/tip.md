@@ -16,5 +16,3 @@ watchOptions: {
 需要将 `cleanWebpackPlugin` 关闭，防止监听到改变时把没有改变的文件给清除了，即`index.html` 会被清除 (暂未复现)
 
 [官网](https://webpack.js.org/configuration/watch/)
-
-@todo: `watch` 原理
