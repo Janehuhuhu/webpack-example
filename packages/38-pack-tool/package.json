@@ -1,0 +1,16 @@
+{
+  "name": "38-pack-tool",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/js/index.js",
+  "scripts": {
+    "start": "npx webpack-dev-server --config webpack.config.js",
+    "dev": "npx webpack --config webpack.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "hjpack": "./bin/index.js"
+  }
+}
