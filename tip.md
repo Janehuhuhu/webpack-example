@@ -43,9 +43,9 @@ webpack 小结：
 
 
 @TODO
-- 实操篇
-  - loader 写法
-  - plugin 写法
+- 调整readme
 - 原理篇
   - `watch` 原理
   - webpack 原理
+  - 输出文件分析
+  - 常见的工具： 按需加载、wiki实践、优化动作（fang月刊）
