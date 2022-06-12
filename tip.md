@@ -45,7 +45,7 @@ webpack 小结：
 @TODO
 - 调整readme
 - 原理篇
-  - `watch` 原理
+  - `watch` 原理 hmr
   - webpack 原理
   - 输出文件分析
-  - 常见的工具： 按需加载、wiki实践、优化动作（fang月刊）
+  - 常见的工具： 按需加载原理、wiki实践、优化动作（fang月刊）
