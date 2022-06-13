@@ -72,3 +72,7 @@
 - [55-tapable-AsyncSeriesHook-promise](./packages/55-tapable-asyncserieshook-promise/README.md)
 - [56-手写插件](./packages/56-plugin/README.md)
 - [57-增加插件功能](./packages/57-pack-tool-add-plugin/README.md)
+
+
+### webpack 原理
+- [webpack 原理](./packages/59-webpack-theory/README.md)
