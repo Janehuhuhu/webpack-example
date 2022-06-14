@@ -8,3 +8,11 @@
 - [Webpack 运行时](https://zhuanlan.zhihu.com/p/373946949)
   - [Webpack模块化实现&动态模块加载原理](https://segmentfault.com/a/1190000022191241)
 - [Tree-Shaking 实现原理](https://zhuanlan.zhihu.com/p/403901557)
+- [提升编译性能](https://zhuanlan.zhihu.com/p/425425675)
+  - 使用最新版本
+  - 缩小资源搜索范围
+  - 跳过文件编译
+  - 最小化 `Loader` 作用范围
+  - 最小化 `watch` 监控范围
+  - 跳过 `TS` 类型检查
+  - 慎用 `source-map`
