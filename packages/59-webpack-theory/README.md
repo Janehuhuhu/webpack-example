@@ -22,9 +22,16 @@
     - `Thread-loader` 组件提升 `Make` 阶段性能
     - 生产环境下还可配合 `terser-webpack-plugin `的并行压缩功能
 
+  <br></br>
+
 
   ## webpack 实践
   - [webpack多入口应用增量构建如何最高提速97%](https://juejin.cn/post/7053059974850674695)
     - 思路：根据 `git diff` 找到变动文件，经过 `loader` 转换后的代码通过 `madge` 找到变动文件依赖关系，最终确定影响的入口文件，调用 `webpack`
 
+  - 缓存
+    - [几种缓存方式比较](https://blog.csdn.net/qiwoo_weekly/article/details/104935415)
+      - `webpack4` 用 `HardSourceWebpackPlugin`(相对于 `cache-loaer` 速度更快), `webpack5` 用 [cache](https://webpack.docschina.org/configuration/cache/)
+      - `HardSourceWebpackPlugin` 默认缓存在 `.cache/hard-source` 中， `vue-cli4` 默认开启 `cache-loader`（vue-loader/babel-loader/eslint-loader） 缓存
+    - [webpack 性能优化之缓存](https://www.jianshu.com/p/4da48bd1ce93)
   
