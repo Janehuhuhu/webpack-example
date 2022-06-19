@@ -52,3 +52,5 @@ new Webpack.DllReferencePlugin({
 })
 ```
 注意：`add-asset-html-webpack-plugin` 会在工程打包中引入 `dll.js` 库，因为版本问题导入 `html` 中的 `dll` 文件路径总是带有 `auto/`, 导致解析路径错误，暂未找到合适版本
+
+- [辛辛苦苦学会的 webpack dll 配置，可能已经过时了](https://juejin.cn/post/6844903952140468232)

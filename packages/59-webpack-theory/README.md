@@ -21,3 +21,10 @@
   - [多进程打包](https://zhuanlan.zhihu.com/p/425076452)
     - `Thread-loader` 组件提升 `Make` 阶段性能
     - 生产环境下还可配合 `terser-webpack-plugin `的并行压缩功能
+
+
+  ## webpack 实践
+  - [webpack多入口应用增量构建如何最高提速97%](https://juejin.cn/post/7053059974850674695)
+    - 思路：根据 `git diff` 找到变动文件，经过 `loader` 转换后的代码通过 `madge` 找到变动文件依赖关系，最终确定影响的入口文件，调用 `webpack`
+
+  
