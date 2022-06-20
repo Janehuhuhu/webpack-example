@@ -24,4 +24,17 @@ npm install --save-dev node-sass sass-loader
 }
 ```
 
-[官网](https://webpack.js.org/loaders/sass-loader/)
+- [官网](https://webpack.js.org/loaders/sass-loader/)
+- [vue sass-loader 配置](https://vue-loader.vuejs.org/zh/guide/pre-processors.html#sass-vs-scss)
+  - 可共享全局变量，[css.loaderOptions](https://cli.vuejs.org/zh/config/#css-loaderoptions)
+  - ```js
+      projectOptions.css.loaderOptions = {
+        sass: {
+          // 如果 sass-loader 版本 = 8，这里使用 `prependData` 字段
+          // 如果 sass-loader 版本 < 8，这里使用 `data` 字段
+          data: Object.keys(styleVariables) // styleVariables 在 vue.config.js pluginOptions 中定义
+            .map(key => `$${key}: ${styleVariables[key]};`)
+            .join('\n'),
+        },
+      }
+    ```
