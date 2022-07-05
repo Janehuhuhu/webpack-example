@@ -37,4 +37,14 @@
       - `webpack4` 用 `HardSourceWebpackPlugin`(相对于 `cache-loaer` 速度更快), `webpack5` 用 [cache](https://webpack.docschina.org/configuration/cache/)
       - `HardSourceWebpackPlugin` 默认缓存在 `.cache/hard-source` 中， `vue-cli4` 默认开启 `cache-loader`（vue-loader/babel-loader/eslint-loader） 缓存
     - [webpack 性能优化之缓存](https://www.jianshu.com/p/4da48bd1ce93)
+
+
+<br></br>
+
+  ## webpack 常用插件
+  - [preload-webpack-plugin](https://www.npmjs.com/package/preload-webpack-plugin)
+    - [基于webpack来配置html的preload和prefetch](https://www.shuizhongyueming.com/2018/06/05/%E5%9F%BA%E4%BA%8Ewebpack%E6%9D%A5%E9%85%8D%E7%BD%AEhtml%E7%9A%84preload%E5%92%8Cprefetch/)
+
+- [html-webpack-inline-code-plugin](https://www.npmjs.com/package/html-webpack-inline-code-plugin)
+  - 允许嵌入 `js、css` 代码
   
