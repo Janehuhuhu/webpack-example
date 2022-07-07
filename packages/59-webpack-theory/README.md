@@ -29,6 +29,8 @@
   - [webpack多入口应用增量构建如何最高提速97%](https://juejin.cn/post/7053059974850674695)
     - 思路：根据 `git diff` 找到变动文件，经过 `loader` 转换后的代码通过 `madge` 找到变动文件依赖关系，最终确定影响的入口文件，调用 `webpack`
 
+  - [Webpack实战 - 使用动态 entry 改善调试体验](https://cloud.tencent.com/developer/article/1607466)
+
   - 拓展知识点
     - [DefinePlugin](./DefinePlugin.md)
 
@@ -45,6 +47,6 @@
   - [preload-webpack-plugin](https://www.npmjs.com/package/preload-webpack-plugin)
     - [基于webpack来配置html的preload和prefetch](https://www.shuizhongyueming.com/2018/06/05/%E5%9F%BA%E4%BA%8Ewebpack%E6%9D%A5%E9%85%8D%E7%BD%AEhtml%E7%9A%84preload%E5%92%8Cprefetch/)
 
-- [html-webpack-inline-code-plugin](https://www.npmjs.com/package/html-webpack-inline-code-plugin)
-  - 允许嵌入 `js、css` 代码
+  - [html-webpack-inline-code-plugin](https://www.npmjs.com/package/html-webpack-inline-code-plugin)
+    - 允许嵌入 `js、css` 代码
   
