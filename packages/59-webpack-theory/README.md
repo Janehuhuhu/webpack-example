@@ -26,13 +26,16 @@
 
 
   ## webpack 实践
-  - [webpack多入口应用增量构建如何最高提速97%](https://juejin.cn/post/7053059974850674695)
-    - 思路：根据 `git diff` 找到变动文件，经过 `loader` 转换后的代码通过 `madge` 找到变动文件依赖关系，最终确定影响的入口文件，调用 `webpack`
+  - 增量构建
+  `webpack4` 按需编译的能力，核心逻辑社区插件 `lazy-compile-webpack-plugin` ，但是该插件不支持 `webpack5`，`webpack5` 虽然自带了实验性属性按需编译的能力配置 [experiments.lazyCompilation](https://webpack.js.org/configuration/experiments/#experimentslazycompilation)
+    - [webpack多入口应用增量构建如何最高提速97%](https://juejin.cn/post/7053059974850674695)
+      - 思路：根据 `git diff` 找到变动文件，经过 `loader` 转换后的代码通过 `madge` 找到变动文件依赖关系，最终确定影响的入口文件，调用 `webpack`
+      - 拓展知识点
+        - [DefinePlugin](./DefinePlugin.md)
 
-  - [Webpack实战 - 使用动态 entry 改善调试体验](https://cloud.tencent.com/developer/article/1607466)
+    - [Webpack实战 - 使用动态 entry 改善调试体验](https://cloud.tencent.com/developer/article/1607466)
 
-  - 拓展知识点
-    - [DefinePlugin](./DefinePlugin.md)
+  <br></br>
 
   - 缓存
     - [几种缓存方式比较](https://blog.csdn.net/qiwoo_weekly/article/details/104935415)
@@ -49,4 +52,7 @@
 
   - [html-webpack-inline-code-plugin](https://www.npmjs.com/package/html-webpack-inline-code-plugin)
     - 允许嵌入 `js、css` 代码
+
+  - [HtmlWebpackPlugin](https://webpack.docschina.org/plugins/html-webpack-plugin/)
+    - [参数含义](https://juejin.cn/post/6854573216108085261)
   
