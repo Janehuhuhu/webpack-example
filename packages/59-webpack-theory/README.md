@@ -34,6 +34,9 @@
         - [DefinePlugin](./DefinePlugin.md)
 
     - [Webpack实战 - 使用动态 entry 改善调试体验](https://cloud.tencent.com/developer/article/1607466)
+      - 拓展知识点
+        - [webpack-dev-middleware](https://github.com/webpack/webpack-dev-middleware): `invalidate、waitUntilValid` 用于重新构建
+        - [cheerio](https://www.jianshu.com/p/629a81b4e013): 用于更新返回的 `html` 文件中的静态资源
 
   <br></br>
 
