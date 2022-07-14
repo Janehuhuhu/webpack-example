@@ -5,9 +5,11 @@
 ```js
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
-plugins: [
-  new BundleAnalyzerPlugin(),
-]
+configureWebpack: {
+  plugins: [
+    new BundleAnalyzerPlugin()
+  ]
+}
 ```
 
 [vue-cli中使用webpack-bundle-analyzer](https://juejin.cn/post/6844904112299966478)

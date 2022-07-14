@@ -37,6 +37,7 @@
       - 拓展知识点
         - [webpack-dev-middleware](https://github.com/webpack/webpack-dev-middleware): `invalidate、waitUntilValid` 用于重新构建
         - [cheerio](https://www.jianshu.com/p/629a81b4e013): 用于更新返回的 `html` 文件中的静态资源
+        - [webpack 构建产物分析](https://tsejx.github.io/webpack-guidebook/best-practice/optimization/build-analyze/)
 
   <br></br>
 
@@ -59,3 +60,9 @@
   - [HtmlWebpackPlugin](https://webpack.docschina.org/plugins/html-webpack-plugin/)
     - [参数含义](https://juejin.cn/post/6854573216108085261)
   
+
+
+  todo:
+  - webpack 构建使用部分源码
+  - 构建产物可视化报错
+  - 实践
