@@ -76,15 +76,15 @@ proxy: [{
 ## 6. 热更新
 ### 6.1 什么是HMR
 
-1）通过 `webpack-dev-server` 自动打包并没有真正的放到指定的目录中,因为读写磁盘是非常耗时和消耗性能的,所以为了提升性能`webpack-dev-server` 将转换好的内容直接放到了内存中
+1）通过 `webpack-dev-server` 自动打包并没有真正的放到指定的目录中,因为读写磁盘是非常耗时和消耗性能的,所以为了提升性能 `webpack-dev-server` 将转换好的内容直接放到了内存中
 
-2）通过 `webpack-dev-server` 可以实现实时监听打包内容的变化,每次打包之后都会自动刷新网页, 但是正是因为每当内容被修改时都会自动刷新网页所以给我们带来了很多不便（比如点击按钮动态添加的内容在重新刷新后没有了）, 这时就需要通过HMR插件来优化调试开发
+2）通过 `webpack-dev-server` 可以实现实时监听打包内容的变化,每次打包之后都会自动刷新网页, 但是正是因为每当内容被修改时都会自动刷新网页所以给我们带来了很多不便（比如点击按钮动态添加的内容在重新刷新后没有了）, 这时就需要通过 `HMR` 插件来优化调试开发
 
 3）`HMR`(*HotModuleReplacementPlugin*)热更新插件,会在内容发生改变的时候时时的更新修改的内容（即将变化的内容应用到网页中）但是不会重新刷新网站
 <div style="margin-bottom: 30px;"></div>
 
 ### 6.2 HMR 使用
-`HotModuleReplacementPlugin` 是一个内置插件, 所以不需要任何安装直接引入`webpack` 模块即可使用
+`HotModuleReplacementPlugin` 是一个内置插件, 所以不需要任何安装直接引入 `webpack` 模块即可使用
 <div style="margin-bottom: 30px;"></div>
 
 ### 6.3 在 devServer 中开启热更新

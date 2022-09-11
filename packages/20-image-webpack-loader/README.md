@@ -3,7 +3,7 @@
 <div style="margin-bottom: 50px;"></div>
 
 ## 2. 如何压缩图片
-每次在打包图片之前,我们可以通过配置`webpack` 对打包的图片进行压缩, 以较少打包之后的体积
+每次在打包图片之前,我们可以通过配置 `webpack` 对打包的图片进行压缩, 以较少打包之后的体积
 ```js
 // 安装依赖
 npm install image-webpack-loader --save-dev

@@ -1,4 +1,4 @@
-## 1. 什么是copy-webpack-plugin
+## 1. 什么是 copy-webpack-plugin
 在打包项目的时候除了 *JS/CSS/图片/字体图标* 等需要打包以外, 可能还有一些相关的文档也需要打包, 文档内容是固定不变的, 我们只需要将对应的文件拷贝到打包目录中即可,那么这个时候我们就可以使用 `copy-plugin` 来实现文件的拷贝
 <div style="margin-bottom: 50px;"></div>
 

@@ -1,5 +1,5 @@
 ## 1. url-loader
-`url-loader` 功能类似于 `file-loader` ，也是默认使用 `es6` 模块的导出引入方式,所以 `require` 无法解析, 可使用 `esModule: false`解决。但是在文件大小（单位 byte）低于指定的限制时，可以返回一个 `DataURL`
+`url-loader` 功能类似于 `file-loader` ，也是默认使用 `es6` 模块的导出引入方式,所以 `require` 无法解析, 可使用 `esModule: false` 解决。但是在文件大小（单位 byte）低于指定的限制时，可以返回一个 `DataURL`
 <div style="margin-bottom: 50px;"></div>
 
 

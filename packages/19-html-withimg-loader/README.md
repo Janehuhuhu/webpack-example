@@ -1,5 +1,5 @@
 ## 1. 什么是 html-withimg-loader
-我们通过 `file-loader` 或者 `url-loader` 已经可以将 `JS` 或者 `CSS` 中用到的图片打包到指定目录中了, 但是 `file-loader` 或者 `url-loader` 并不能将 `HTML` 中用到的图片打包到指定目录中, 所以此时我们就需要再借助一个名称叫做`html-withimg-loader`的加载器来实现 `HTML` 中图片的打包
+我们通过 `file-loader` 或者 `url-loader` 已经可以将 `JS` 或者 `CSS` 中用到的图片打包到指定目录中了, 但是 `file-loader` 或者 `url-loader` 并不能将 `HTML` 中用到的图片打包到指定目录中, 所以此时我们就需要再借助一个名称叫做 `html-withimg-loader` 的加载器来实现 `HTML` 中图片的打包
 <div style="margin-bottom: 50px;"></div>
 
 ## 2. html-withimg-loader 使用

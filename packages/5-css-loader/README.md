@@ -39,8 +39,8 @@ npm install --save-dev css-loader style-loader
 <div style="margin-bottom: 30px;"></div>
 
 ### 3.2 css-loader 和 style-loader 作用
-- css-loader:   解析css文件中的@import依赖关系
-- style-loader: 将webpack处理之后的内容插入到HTML的HEAD代码中
+- css-loader:   解析 `css` 文件中的 `@import` 依赖关系, 压缩 `CSS` 
+- style-loader: 转换成通过脚本加载的 `JS` 代码，将 `webpack` 处理之后的内容插入到 `HTML` 的 `HEAD` 代码中
 <div style="margin-bottom: 50px;"></div>
 
 
