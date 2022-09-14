@@ -88,7 +88,7 @@ proxy: [{
 <div style="margin-bottom: 30px;"></div>
 
 ### 6.3 在 devServer 中开启热更新
-从 *webpack-dev-server v4* 开始，`HMR` 是默认启用的。它会自动应用 `webpack.HotModuleReplacementPlugin`, 即 *6.3* 中所述配置均是不需要的
+从 *webpack-dev-server v4* 开始，`HMR` 是默认启用的。它会自动应用 `webpack.HotModuleReplacementPlugin`, 即 *6.3* 中所述配置均是不需要的<br>
 1）配置
 ```js
 hot: true, // 开启热更新
