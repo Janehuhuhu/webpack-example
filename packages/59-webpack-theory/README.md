@@ -1,7 +1,14 @@
 ## webpack 原理
 - [Webpack 核心原理](https://zhuanlan.zhihu.com/p/363928061)
 - [Webpack 插件架构](https://zhuanlan.zhihu.com/p/367931462)
+
+### HMR 原理
+- [HMR 原理全解析](https://zhuanlan.zhihu.com/p/410510492)
+- [Webpack HMR 原理解析](https://zhuanlan.zhihu.com/p/30669007)
+- [从零实现webpack热更新HMR](https://juejin.cn/post/6844904020528594957)
 - [HMR 原理](https://zhuanlan.zhihu.com/p/410510492)
+
+
 - [如何编写loader](https://zhuanlan.zhihu.com/p/375626250)
   - [pitch](https://zhuanlan.zhihu.com/p/104205895)
   - `pitch` 应用存疑
