@@ -1,6 +1,10 @@
 ## webpack 原理
+### webpack 编译
 - [Webpack 核心原理](https://zhuanlan.zhihu.com/p/363928061)
 - [Webpack 插件架构](https://zhuanlan.zhihu.com/p/367931462)
+- [webpack之编译原理](https://segmentfault.com/a/1190000039323677)
+
+
 - [HMR 原理](https://zhuanlan.zhihu.com/p/410510492)
 - [如何编写loader](https://zhuanlan.zhihu.com/p/375626250)
   - [pitch](https://zhuanlan.zhihu.com/p/104205895)
@@ -60,6 +64,10 @@
   - [HtmlWebpackPlugin](https://webpack.docschina.org/plugins/html-webpack-plugin/)
     - [参数含义](https://juejin.cn/post/6854573216108085261)
   
+
+
+## webpack 面试
+
 
 
   todo:

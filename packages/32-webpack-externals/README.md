@@ -11,7 +11,7 @@
 <div style="margin-bottom: 30px;"></div>
 
 
-### 2.2 在配置文件中告诉webpack这是一个外部扩展库, 不需要打包
+### 2.2 在配置文件中告诉 webpack 这是一个外部扩展库, 不需要打包
 ```js
 /*
 告诉webpack哪些第三方模块不需要打包

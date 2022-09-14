@@ -13,7 +13,7 @@ module.exports = function (source) {
     },
     "additionalProperties": false
   }
-  validate(schema, options, 'ReplaceLoader')
+  validate(schema, options, 'ReplaceLoader') // Allow to setup name in validation errors.
   source = source.replace(/666/g, options.name)
   return source
 }
