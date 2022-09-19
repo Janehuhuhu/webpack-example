@@ -10,7 +10,7 @@
 - 然后需要定制打包配置文件
 - 然后可以通过 `npx webpack` 对指定文件进行打包
 
-所以综上所述 `webpack` 就是一个工具模块, 提供了 `webpack` 指令, 所以要想实现 `webpack` 必须先实现一个工具模块, 这里定义的是 `njpack`。定义后先执行 `npm link` 将 `npm` 模块链接（`yarn link`不行到对应的运行项目中去，在项目中执行 `yarn link xx` 方便地对模块进行调试和测试）,详见 [npm link 使用](https://www.jianshu.com/p/aaa7db89a5b2)
+所以综上所述 `webpack` 就是一个工具模块, 提供了 `webpack` 指令, 所以要想实现 `webpack` 必须先实现一个工具模块, 这里定义的是 `njpack`。定义后先执行 `npm link` 将 `npm` 模块链接（`yarn link`不行）到对应的运行项目中去，在项目中执行 `yarn link xx` 方便地对模块进行调试和测试）,详见 [npm link 使用](https://www.jianshu.com/p/aaa7db89a5b2)
 <div style="margin: 50px"></div>
 
 
