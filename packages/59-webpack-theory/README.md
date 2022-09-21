@@ -10,6 +10,7 @@
 - [Webpack HMR 原理解析](https://zhuanlan.zhihu.com/p/30669007)
 - [从零实现webpack热更新HMR](https://juejin.cn/post/6844904020528594957) ❤
 - [HMR 原理](https://zhuanlan.zhihu.com/p/410510492)
+- [文件监听原理](https://webpack.wuhaolin.cn/4%E4%BC%98%E5%8C%96/4-5%E4%BD%BF%E7%94%A8%E8%87%AA%E5%8A%A8%E5%88%B7%E6%96%B0.html)
 
 
 - [如何编写loader](https://zhuanlan.zhihu.com/p/375626250)
