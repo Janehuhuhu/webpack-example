@@ -21,10 +21,14 @@ resolve: {
 <div style="margin-bottom: 30px;"></div>
 
 ### 2.2 修改入口查找顺序, 简化导入代码
+在引用模块时，指明使用package.json中哪个字段指定的文件，默认是“main”
 ```js
 resolve: {
-  // 指定模块入口的查找顺序
-  mainFields: ["style", "main"],
+  // 配置 target === "web" 或者 target === "webworker" 时 mainFields 默认值是：
+  mainFields: ['browser', 'module', 'main'],
+
+  // target 的值为其他时，mainFields 默认值为：
+  mainFields: ["module", "main"],
 }
 ```
 <div style="margin-bottom: 30px;"></div>
