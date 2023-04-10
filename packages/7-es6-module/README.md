@@ -53,3 +53,7 @@ export {a, b}
 export default c;
 import c, {a, b} from "path";
 ```
+
+
+### 2.4 libraryTarget 和 library
+- [libraryTarget](https://blog.csdn.net/qq_17175013/article/details/119753486)
